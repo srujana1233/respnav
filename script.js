@@ -3,10 +3,9 @@
 const line1 = document.getElementById('line1');
 const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
+let nav = true;
 
 const background = document.querySelector('.background');
-
-let nav = true;
 
 const navLinks = document.querySelector('.nav-links');
 
@@ -16,7 +15,7 @@ const clickHandler = () => {
         line2.style.cssText = 'transform:rotate(-45deg);margin-top: -6px;'
         line3.style.cssText = 'display:none;'
 
-        navLinks.style.cssText = 'right :0; transition:all 0.3s ease-out;'
+        navLinks.style.cssText = 'right :21%; transition:all 0.3s ease-out;'
         background.style.cssText = 'transform:scale(50);'
         nav = !nav;
 
@@ -28,8 +27,8 @@ const clickHandler = () => {
 
         navLinks.style.cssText = 'right :70%; transition:all 0.3s ease-out;'
         background.style.cssText = 'transform:scale(1);'
+        nav = !nav;
     }
-    nav = !nav;
 
 
 };
